@@ -1,3 +1,10 @@
+/*
+NAME: Dongkyu kim
+ONID: kimdongk
+OSUID#: 933-296-408
+DATE: April 15. 2018
+*/
+
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
@@ -163,7 +170,6 @@ void *producer(void *param)
 
         //Acquire mutex lock to protect buffer
         pthread_mutex_lock(&mutex);
-
 
         val1 = randomNum(1, 10);
 
